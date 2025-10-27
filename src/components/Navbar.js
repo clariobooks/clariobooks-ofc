@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          <img src="/logos/Clariobooks.png" alt="Clario Books" className="nav-logo-img" />
+          <img src="/Logos/Clariobooks.png" alt="Clario Books" className="nav-logo-img" />
           <span className="nav-logo-text">CLARIO BOOKS</span>
         </Link>
         <ul className="nav-menu">

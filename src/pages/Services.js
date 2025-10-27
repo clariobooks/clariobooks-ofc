@@ -33,10 +33,10 @@ const ServicesPage = () => {
   ];
 
   const softwareList = [
-    { name: 'Microsoft Excel', brandClass: 'excel', icon: 'X', logoUrl: '/logos/excel.png' },
-    { name: 'QuickBooks', brandClass: 'quickbooks', icon: 'QB', logoUrl: '/logos/quickbooks.png' },
+    { name: 'Microsoft Excel', brandClass: 'excel', icon: 'X', logoUrl: '/Logos/excel.png' },
+    { name: 'QuickBooks', brandClass: 'quickbooks', icon: 'QB', logoUrl: '/Logos/quickbooks.png' },
     { name: 'NetSuite', brandClass: 'netsuite', logoUrl: 'https://logos-world.net/wp-content/uploads/2021/09/NetSuite-Logo.png' },
-    { name: 'Xero Accounting', brandClass: 'xero', icon: 'X', logoUrl: '/logos/xero.png' },
+    { name: 'Xero Accounting', brandClass: 'xero', icon: 'X', logoUrl: '/Logos/xero.png' },
     { name: 'Zoho Books', brandClass: 'zoho', icon: 'Z', logoUrl: 'https://cdn.worldvectorlogo.com/logos/zoho-1.svg' }
   ];
 

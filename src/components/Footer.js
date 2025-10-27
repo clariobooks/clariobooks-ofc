@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <img src="/logos/Clariobooks.png" alt="Clario Books" className="footer-logo-img" />
+          <img src="/Logos/Clariobooks.png" alt="Clario Books" className="footer-logo-img" />
           <h3 className="footer-logo-text">CLARIO BOOKS</h3>
           <p>Your trusted partner in financial clarity and bookkeeping excellence.</p>
         </div>

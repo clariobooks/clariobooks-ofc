@@ -4,13 +4,13 @@ const Software = () => {
       name: 'Microsoft Excel', 
       brandClass: 'excel',
       icon: 'X',
-      logoUrl: '/logos/excel.png'
+      logoUrl: '/Logos/excel.png'
     },
     { 
       name: 'QuickBooks', 
       brandClass: 'quickbooks',
       icon: 'QB',
-      logoUrl: '/logos/quickbooks.png'
+      logoUrl: '/Logos/quickbooks.png'
     },
     { 
       name: 'NetSuite', 
@@ -21,7 +21,7 @@ const Software = () => {
       name: 'Xero Accounting', 
       brandClass: 'xero',
       icon: 'X',
-      logoUrl: '/logos/xero.png'
+      logoUrl: '/Logos/xero.png'
     },
     { 
       name: 'Zoho Books', 
