@@ -52,11 +52,20 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/services" 
-              className={isActive('/services') ? 'nav-link active' : 'nav-link'}
+              to="/expertise" 
+              className={isActive('/expertise') ? 'nav-link active' : 'nav-link'}
               onClick={closeMenu}
             >
-              Services
+              Our Expertise
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/resources" 
+              className={isActive('/resources') ? 'nav-link active' : 'nav-link'}
+              onClick={closeMenu}
+            >
+              Resources
             </Link>
           </li>
           <li>

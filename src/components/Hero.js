@@ -10,7 +10,6 @@ const Hero = () => {
         </p>
         <div className="hero-buttons">
           <a href="/contact" className="btn btn-primary">Contact us</a>
-          <a href="#calculator" className="btn btn-secondary">Calculator</a>
         </div>
       </div>
       <div className="hero-image">

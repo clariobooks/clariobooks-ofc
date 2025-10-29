@@ -152,7 +152,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(42, 16, 72, 0.8), rgba(42, 16, 72, 0.8)), 
+  background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), 
               url('https://static.wixstatic.com/media/da73c50a72bc4ea4ba2fb7f20892a464.jpg/v1/fill/w_1351,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/da73c50a72bc4ea4ba2fb7f20892a464.jpg');
   background-size: cover;
   background-position: center;
@@ -285,7 +285,7 @@ section {
 
 .stat-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(214, 185, 252, 0.2);
+  box-shadow: 0 10px 30px rgba(44, 116, 179, 0.3);
   border-color: var(--highlight);
 }
 
@@ -453,7 +453,7 @@ section {
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(214, 185, 252, 0.2);
+  box-shadow: 0 10px 30px rgba(44, 116, 179, 0.3);
   border-color: var(--highlight);
 }
 
@@ -510,8 +510,8 @@ section {
 }
 
 .advantage-card {
-  background: rgba(214, 185, 252, 0.05);
-  border: 1px solid rgba(214, 185, 252, 0.2);
+  background: rgba(44, 116, 179, 0.1);
+  border: 1px solid rgba(74, 158, 255, 0.3);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
@@ -519,7 +519,7 @@ section {
 }
 
 .advantage-card:hover {
-  background: rgba(214, 185, 252, 0.15);
+  background: rgba(44, 116, 179, 0.2);
   transform: translateY(-5px);
   border-color: var(--highlight);
 }
@@ -675,7 +675,7 @@ section {
 }
 
 .software-logo.quickbooks {
-  background: linear-gradient(135deg, #4B0082 0%, #6A0DAD 100%);
+  background: linear-gradient(135deg, #2C74B3 0%, #205295 100%);
 }
 
 .software-logo.netsuite {
@@ -830,7 +830,7 @@ section {
 .submit-message {
   margin-top: 1.5rem;
   padding: 1rem;
-  background: rgba(214, 185, 252, 0.1);
+  background: rgba(44, 116, 179, 0.1);
   border: 1px solid var(--highlight);
   border-radius: 5px;
   color: var(--text-light);
@@ -880,6 +880,8 @@ section {
 
 .about-page,
 .services-page,
+.expertise-page,
+.resources-page,
 .contact-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -927,6 +929,8 @@ section {
 
 .about-page h1,
 .services-page h1,
+.expertise-page h1,
+.resources-page h1,
 .contact-page h1 {
   text-align: center;
   font-size: 3rem;
@@ -976,7 +980,7 @@ section {
 }
 
 .contact-info {
-  background: linear-gradient(rgba(42, 16, 72, 0.7), rgba(42, 16, 72, 0.7)), 
+  background: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), 
               url('https://static.wixstatic.com/media/11062b_2b293c2841f642deaae0ecc506903b4b~mv2.jpg/v1/fill/w_1271,h_817,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_2b293c2841f642deaae0ecc506903b4b~mv2.jpg');
   background-size: cover;
   background-position: center;
@@ -990,7 +994,7 @@ section {
 
 .contact-info h1 {
   margin-bottom: 1rem;
-  text-shadow: 0 2px 20px rgba(157, 126, 216, 0.6), 0 4px 30px rgba(157, 126, 216, 0.4);
+  text-shadow: 0 2px 20px rgba(44, 116, 179, 0.6), 0 4px 30px rgba(44, 116, 179, 0.4);
 }
 
 .contact-info p {
@@ -1027,13 +1031,189 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Expertise Page Styles */
+.expertise-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  background: var(--card-bg);
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.tab {
+  padding: 0.8rem 2rem;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  color: var(--highlight);
+  background: rgba(44, 116, 179, 0.1);
+}
+
+.tab.active {
+  background: var(--highlight);
+  color: var(--white);
+  box-shadow: 0 2px 10px rgba(44, 116, 179, 0.4);
+}
+
+.tab-content {
+  margin-top: 2rem;
+}
+
+.expertise-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expertise-intro h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.expertise-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+/* Resources Page Styles */
+.resources-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.resource-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(44, 116, 179, 0.3);
+  border-color: var(--highlight);
+}
+
+.resource-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resource-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.resource-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.resource-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.resource-items li {
+  color: var(--text-light);
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.resource-items li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--highlight);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.resource-card .btn {
+  margin-top: auto;
+  width: 100%;
+}
+
+.resources-cta {
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+}
+
+.resources-cta h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.resources-cta p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
 /* Footer Styles */
 .footer {
   background: var(--footer-gradient);
   color: var(--white);
   padding: 3rem 2rem 1rem;
   margin-top: 4rem;
-  border-top: 2px solid rgba(214, 185, 252, 0.2);
+  border-top: 2px solid rgba(74, 158, 255, 0.3);
 }
 
 .footer-container {
@@ -1117,7 +1297,7 @@ section {
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(214, 185, 252, 0.15);
+  border-top: 1px solid rgba(74, 158, 255, 0.2);
 }
 
 .footer-bottom p {
@@ -1206,8 +1386,23 @@ section {
 
   .about-page h1,
   .services-page h1,
+  .expertise-page h1,
+  .resources-page h1,
   .contact-page h1 {
     font-size: 2rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
   }
 }
 
