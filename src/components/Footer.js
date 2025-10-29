@@ -23,7 +23,7 @@ const Footer = () => {
         
         <div className="footer-section">
           <h4>Contact</h4>
-          <p>Phone: 123-456-7890</p>
+          <p>Phone: 92 321 2918754</p>
           <p>Business Email: info@clariobook.com</p>
           <p>Gmail: Clariobooks@gmail.com</p>
           <p>Address: 500 Terry Francine St.</p>
@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; 2035 by C. Leclerc. All rights reserved.</p>
+        <p>&copy; 2025 Clario Books. All Rights Reserved.</p>
       </div>
     </footer>
   );

@@ -3,7 +3,14 @@ const About = () => {
     <div className="page-container about">
       <section className="about-page">
         <div className="about-container">
-          <h1>About CLARIO BOOKS</h1>
+          <h1 className="page-title">
+            <img
+              className="title-icon"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEYPI2dvE0283QB9x2JewvE1wy35OwvzA0Q&s"
+              alt="About Clario Books"
+            />
+            About CLARIO BOOKS
+          </h1>
           
           <div className="about-content">
             <div className="about-section">

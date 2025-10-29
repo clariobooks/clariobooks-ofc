@@ -43,15 +43,6 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/about" 
-              className={isActive('/about') ? 'nav-link active' : 'nav-link'}
-              onClick={closeMenu}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link 
               to="/expertise" 
               className={isActive('/expertise') ? 'nav-link active' : 'nav-link'}
               onClick={closeMenu}
@@ -66,6 +57,15 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               Resources
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/about" 
+              className={isActive('/about') ? 'nav-link active' : 'nav-link'}
+              onClick={closeMenu}
+            >
+              About
             </Link>
           </li>
           <li>

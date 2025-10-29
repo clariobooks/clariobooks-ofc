@@ -63,7 +63,14 @@ const Expertise = () => {
     <div className="page-container">
       <section className="expertise-page">
         <div className="expertise-page-container">
-          <h1>OUR EXPERTISE</h1>
+          <h1 className="page-title">
+            <img
+              className="title-icon"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfgyw65QspHqXhNsnNMjfkj7h9MVBaF-tJQ&s"
+              alt="Our Expertise"
+            />
+            OUR EXPERTISE
+          </h1>
           
           <div className="tabs-container">
             <div className="tabs">
