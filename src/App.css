@@ -342,6 +342,7 @@ section {
   justify-content: center;
 }
 
+
 .placeholder-image {
   color: var(--text-light);
   font-size: 1.2rem;
@@ -374,13 +375,24 @@ section {
   gap: 1rem;
 }
 
+/* === Commitments Stats Bar Styling (Blue Glow Update) === */
 .stat-bar {
-  flex: 1;
+  background: linear-gradient(90deg, #2C74B3, #0A2647);
+  box-shadow: 0 0 12px rgba(44, 116, 179, 0.8), 0 0 24px rgba(20, 66, 114, 0.6);
   height: 12px;
-  background: var(--bg-light);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* You can leave the width classes as they are (e.g., stat-bar-99) */
+.stat-bar-99 { width: 99%; }
+.stat-bar-98 { width: 98%; }
+.stat-bar-96 { width: 96%; }
+.stat-bar-100 { width: 100%; }
+
+/* Optional: Subtle hover glow (only if you want interactivity) */
+.stat-bar:hover {
+  box-shadow: 0 0 20px rgba(44, 116, 179, 1), 0 0 40px rgba(20, 66, 114, 0.9);
 }
 
 .stat-bar::before {

@@ -39,6 +39,7 @@ const ServicesPage = () => {
     { name: 'Xero Accounting', brandClass: 'xero', icon: 'X', logoUrl: '/Logos/xero.png' },
     { name: 'Zoho Books', brandClass: 'zoho', icon: 'Z', logoUrl: 'https://cdn.worldvectorlogo.com/logos/zoho-1.svg' }
   ];
+ 
 
   return (
     <div className="page-container">
