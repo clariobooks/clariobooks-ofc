@@ -377,6 +377,7 @@ section {
 
 /* === Commitments Stats Bar Styling (Blue Glow Update) === */
 .stat-bar {
+  position: relative;
   background: linear-gradient(90deg, #2C74B3, #0A2647);
   box-shadow: 0 0 12px rgba(44, 116, 179, 0.8), 0 0 24px rgba(20, 66, 114, 0.6);
   height: 12px;
