@@ -5,19 +5,19 @@
 }
 
 :root {
-  --primary-color: #0A2647;
-  --secondary-color: #144272;
-  --accent-color: #205295;
-  --text-color: #ffffff;
-  --text-light: #D0E7FF;
-  --bg-light: #194A73;
-  --white: #0A2647;
+  --primary-color: #fff;
+  --secondary-color: #f8fafc;
+  --accent-color: #e9f2fc;
+  --text-color: #222;
+  --text-light: #555d69;
+  --bg-light: #f5f7fa;
+  --white: #fff;
   --highlight: #2C74B3;
-  --border-color: #4A9EFF;
-  --bg-gradient: linear-gradient(135deg, #0A2647 0%, #144272 100%);
-  --card-bg: rgba(44, 116, 179, 0.1);
-  --footer-bg: #03001C;
-  --footer-gradient: linear-gradient(135deg, #03001C 0%, #0A2647 100%);
+  --border-color: #e3e9f5;
+  --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #e9f2fc 100%);
+  --card-bg: #f8fafc;
+  --footer-bg: #fff;
+  --footer-gradient: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
 }
 
 body {
@@ -35,6 +35,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--primary-color);
 }
 
 .main-content {
@@ -43,8 +44,8 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background: #144272;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(22,36,71,0.04);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -82,12 +83,9 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #ffffff;
+  color: #2C74B3;
   white-space: nowrap;
-  text-shadow: 
-    0 0 5px rgba(255, 255, 255, 0.3),
-    0 0 10px rgba(44, 116, 179, 0.4),
-    0 0 15px rgba(44, 116, 179, 0.3);
+  text-shadow: none;
   transition: text-shadow 0.3s ease;
 }
 
@@ -136,7 +134,7 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: var(--text-light);
+  color: #2C74B3;
   font-weight: 500;
   transition: color 0.3s ease;
   position: relative;
@@ -147,17 +145,17 @@ body {
 }
 
 .nav-link.active {
-  color: var(--highlight);
+  color: #144272;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), 
-              url('https://static.wixstatic.com/media/da73c50a72bc4ea4ba2fb7f20892a464.jpg/v1/fill/w_1351,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/da73c50a72bc4ea4ba2fb7f20892a464.jpg');
+  background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), 
+    url('https://static.wixstatic.com/media/da73c50a72bc4ea4ba2fb7f20892a464.jpg/v1/fill/w_1351,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/da73c50a72bc4ea4ba2fb7f20892a464.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--white);
+  color: #24292f;
   padding: 5rem 2rem;
   display: flex;
   align-items: center;
@@ -178,7 +176,7 @@ body {
   font-weight: 700;
   margin-bottom: 1rem;
   letter-spacing: 3px;
-  color: #ffffff;
+  color: #24292f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -186,7 +184,7 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  color: #24292f;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -197,7 +195,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
-  color: #ffffff;
+  color: #475069;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -251,7 +249,7 @@ section {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 3rem;
   letter-spacing: 2px;
@@ -320,7 +318,7 @@ section {
 
 .commitment-content h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
@@ -465,7 +463,7 @@ section {
 
 .service-card h3 {
   font-size: 1.3rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
   font-weight: 700;
@@ -479,7 +477,7 @@ section {
 /* Advantage Section */
 .advantage {
   background: var(--bg-gradient);
-  color: var(--white);
+  color: #2C74B3;
   padding: 4rem 2rem;
 }
 
@@ -493,7 +491,7 @@ section {
   font-size: 2rem;
   margin-bottom: 1rem;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
@@ -534,7 +532,7 @@ section {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
@@ -557,7 +555,7 @@ section {
 .software-container h2 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
   letter-spacing: 2px;
@@ -716,7 +714,7 @@ section {
 .testimonials-container h2 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 3rem;
   letter-spacing: 2px;
@@ -746,7 +744,7 @@ section {
 
 .testimonial-author {
   font-weight: 600;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
@@ -764,7 +762,7 @@ section {
 .contact-form-container h2 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 2rem;
   letter-spacing: 2px;
@@ -888,6 +886,8 @@ section {
   margin: 0 auto;
   position: relative;
   padding: 2rem;
+  background: var(--primary-color);
+  color: var(--text-color);
 }
 
 .about-page::before {
@@ -935,7 +935,7 @@ section {
 .contact-page h1 {
   text-align: center;
   font-size: 3rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
   margin-bottom: 1rem;
   letter-spacing: 2px;
@@ -1005,7 +1005,7 @@ section {
 
 .about-section h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 1.5rem;
 }
@@ -1053,7 +1053,7 @@ section {
 }
 
 .contact-info p {
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -1066,14 +1066,14 @@ section {
 }
 
 .contact-item h3 {
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
 .contact-item p {
-  color: #ffffff;
+  color: #23272f;
   line-height: 1.8;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -1144,7 +1144,7 @@ section {
 
 .expertise-intro h2 {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 1.5rem;
   letter-spacing: 2px;
@@ -1195,7 +1195,7 @@ section {
 
 .resource-card h3 {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
   font-weight: 700;
@@ -1249,7 +1249,7 @@ section {
 
 .resources-cta h2 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
   letter-spacing: 1px;
@@ -1383,7 +1383,7 @@ section {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #ffffff;
+  color: #2C74B3;
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.5),
     0 0 20px rgba(255, 255, 255, 0.4),
@@ -1397,7 +1397,7 @@ section {
 .footer-section h4 {
   margin-bottom: 1rem;
   font-size: 1.3rem;
-  color: #ffffff;
+  color: #23272f;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
