@@ -26,8 +26,8 @@ const Footer = () => {
           <p>Phone: 92 321 2918754</p>
           <p>Business Email: info@clariobook.com</p>
           <p>Gmail: Clariobooks@gmail.com</p>
-          <p>Address: 500 Terry Francine St.</p>
-          <p>San Francisco, CA 94158</p>
+          <p>Address: 10 park parade, barra hall circus. Ub32nu</p>
+          <p>Hayes, London</p>
         </div>
         
         <div className="footer-section">

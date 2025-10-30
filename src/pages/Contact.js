@@ -24,7 +24,7 @@ const Contact = () => {
               
               <div className="contact-item">
                 <h3>📍 Address</h3>
-                <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+                <p>10 park parade, barra hall circus. Ub32nu<br />Hayes, London</p>
               </div>
               
               <div className="contact-item">
