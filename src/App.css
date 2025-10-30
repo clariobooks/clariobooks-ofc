@@ -510,9 +510,9 @@ section {
 
 .advantage-subtitle {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(3, 27, 133, 0.7);
 }
 
 .advantage-grid {
@@ -522,8 +522,8 @@ section {
 }
 
 .advantage-card {
-  background: rgba(44, 116, 179, 0.1);
-  border: 1px solid rgba(74, 158, 255, 0.3);
+  background: rgba(44, 116, 179, 0.7);
+  border: 1px solid rgba(3, 120, 253, 0.3);
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
@@ -531,7 +531,7 @@ section {
 }
 
 .advantage-card:hover {
-  background: rgba(44, 116, 179, 0.2);
+  background: rgba(44, 116, 179, 0.9);
   transform: translateY(-5px);
   border-color: var(--highlight);
 }
