@@ -20,9 +20,19 @@ const Expertise = () => {
       icon: '💰'
     },
     {
+      title: 'AR & AP SOLUTIONS',
+      description: 'We provide efficient Accounts Receivable and Accounts Payable solutions to help businesses maintain healthy cash flow and financial control. Our team ensures timely invoicing, accurate payments, and organized record management giving you clear visibility into your finances and peace of mind in every transaction.',
+      icon: '💳'
+    },
+    {
       title: 'FINANCIAL PLANNING',
       description: 'We go beyond numbers — helping you plan budgets, forecast growth, and set financial goals that align with your vision.',
       icon: '🎯'
+    },
+    {
+      title: 'PERFORMANCE ANALYTICS',
+      description: 'We provide insightful performance analytics to help you understand your financial trends and make data-driven decisions. Our detailed reports and analysis turn numbers into clear strategies that enhance efficiency, profitability, and growth.',
+      icon: '📈'
     }
   ];
 
