@@ -5,25 +5,25 @@ const Resources = () => {
   const [activeTab, setActiveTab] = useState('blogs');
 
   const blogs = [
-    { title: 'Best Practices for Small Business Bookkeeping', url: 'https://quickbooks.intuit.com/r/bookkeeping/small-business-bookkeeping-basics/' },
-    { title: 'Understanding Tax Deductions', url: 'https://www.irs.gov/credits-deductions-for-individuals' },
+    { title: 'Bookkeeping Tips', url: 'https://www.coursera.org/articles/small-business-bookkeeping' },
+    { title: 'Understanding Tax Deductions', url: 'https://www.investopedia.com/terms/t/tax-deduction.asp' },
     { title: 'How to Choose the Right Accounting Software', url: 'https://zapier.com/blog/best-accounting-software/' },
-    { title: 'Financial Planning for Growth', url: 'https://www.investopedia.com/financial-planning-4689734' }
+    { title: 'Financial Planning for Growth', url: 'https://www.netsuite.com/portal/resource/articles/financial-management/small-business-financial-plan.shtml' }
   ];
 
   const guides = [
-    { title: 'Bookkeeping Checklist Template (Google Sheets)', url: 'https://docs.google.com/spreadsheets' },
+    { title: 'Importance of Bookkeeping in Business', url: 'https://www.kpi.com/en/importance-of-book-keeping/amp/' },
     { title: 'Annual Financial Review Guide', url: 'https://www.score.org/resource/blog-post/how-conduct-year-end-financial-review' },
-    { title: 'Tax Preparation Checklist', url: 'https://www.hrblock.com/tax-center/filing/tax-prep/documents-to-bring-when-filing/' },
+    //{ title: 'Tax Preparation Checklist', url: 'https://www.hrblock.com/tax-center/filing/tax-prep/documents-to-bring-when-filing/' },
     { title: 'Cash Flow Management Guide', url: 'https://www.shopify.com/blog/cash-flow-management' }
   ];
 
-  const tools = [
+  /*const tools = [
     { title: 'Expense Tracker (Spreadsheet Template)', url: 'https://www.vertex42.com/ExcelTemplates/expense-report-template.html' },
     { title: 'Profit Margin Calculator', url: 'https://www.shopify.com/tools/profit-margin-calculator' },
     { title: 'Sales Tax Calculator', url: 'https://www.calculator.net/sales-tax-calculator.html' },
     { title: 'Cash Flow Calculator', url: 'https://www.calculatorsoup.com/calculators/financial/cash-flow-calculator.php' }
-  ];
+  ];*/
 
   const openLink = (url) => {
     window.open(url, '_blank', 'noopener');
@@ -49,7 +49,7 @@ const Resources = () => {
             <div className="tabs">
               <button className={`tab ${activeTab === 'blogs' ? 'active' : ''}`} onClick={() => setActiveTab('blogs')}>Blogs</button>
               <button className={`tab ${activeTab === 'guides' ? 'active' : ''}`} onClick={() => setActiveTab('guides')}>Guides & Downloads</button>
-              <button className={`tab ${activeTab === 'tools' ? 'active' : ''}`} onClick={() => setActiveTab('tools')}>Tools & Calculators</button>
+              
             </div>
           </div>
 
@@ -80,18 +80,7 @@ const Resources = () => {
               </div>
             )}
 
-            {activeTab === 'tools' && (
-              <div className="resources-grid">
-                {tools.map((item, idx) => (
-                  <div key={idx} className="resource-card">
-                    <div className="resource-icon">🔧</div>
-                    <h3>{item.title}</h3>
-                    <p className="resource-description">Use calculators and templates to make smarter decisions.</p>
-                    <button className="btn btn-primary" onClick={() => openLink(item.url)}>Explore</button>
-                  </div>
-                ))}
-              </div>
-            )}
+            
           </div>
 
           <div className="resources-cta">
